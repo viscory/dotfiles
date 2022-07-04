@@ -1,0 +1,24 @@
+BraveSoftware/
+Code - OSS/
+Code/
+KeePass/
+QtProject.conf
+bash/
+cef_user_data/
+configstore/
+dconf/
+enchant/
+evolution/
+gtk-3.0/
+ibus/
+intel-undervolt/
+mimeapps.list
+redshift/
+systemd/
+teamviewer/
+user-dirs.dirs
+user-dirs.locale
+vlc/
+vokoscreenNG/
+zoomus.conf
+pulse

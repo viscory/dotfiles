@@ -1,0 +1,25 @@
+# Function to source files if they exist
+function zsh_add_file() {
+    [ -f "$ZDOTDIR/$1" ] && source "$ZDOTDIR/$1"
+}
+
+function cfg() {
+    cd $HOME/.config;
+    [ -d "$HOME/.config/$1" ] && cd "$HOME/.config/$1" || echo "No $1 folder"
+}
+
+function wifi() {
+    sudo bash /home/fuz/network/wifi.sh
+}
+
+function ethernet() {
+    sudo bash /home/fuz/network/ethernet.sh
+}
+
+function vpn() {
+    (sudo bash /home/fuz/network/vpn.sh) &
+}
+
+function dl() {
+    docker exec -it $1 bash
+}

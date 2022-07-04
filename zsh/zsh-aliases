@@ -1,0 +1,57 @@
+#!/bin/sh
+alias erc='vim $HOME/.config/zsh/zshrc'
+alias ercf='vim $HOME/.config/zsh/zsh-functions'
+alias erca='vim $HOME/.config/zsh/zsh-aliases'
+alias src='source ~/.config/zsh/.zshrc'
+
+# reap dev stuff
+alias dls='docker ps'
+alias dup='sudo docker-compose -f docker-compose.yml -p reap_dev up -d backend_test'
+alias dstop='docker stop $(docker ps -aq)'
+alias dannihilate='docker system prune -af --volumes'
+
+# directory aliases
+alias down='cd $HOME/Downloads'
+alias rb='cd $HOME/job/reap/backend && pipenv shell'
+alias rf='cd $HOME/job/reap-fe'
+alias tmp='cd /tmp'
+#alias cfg='cd $HOME/.config'
+
+# Colorize grep output (good for log files)
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+# confirm before overwriting something
+alias cp="cp -i"
+alias mv='mv -ib'
+alias rm='rm -i'
+
+# brightness changer
+alias bright='xrandr --output eDP-1 --brightness '
+
+# git
+alias ga="git add"
+alias gs="git status"
+alias gl="git log"
+alias gd="git diff"
+alias gc="git commit -m"
+alias gp="git push"
+alias gm="git checkout master"
+
+# easier to read disk
+alias df='df -h'     # human-readable sizes
+alias free='free -m' # show sizes in MB
+alias pacman='sudo pacman'
+
+# shorten
+alias l='ls --color=auto -lrth'
+alias la='ls --color=auto -lrtah'
+alias ls='ls --color=auto'
+alias c='clear'
+alias b='cd ..'
+alias envg='env | grep'
+alias psg='ps -aux | grep'
+alias vi='vim'
+
+alias j='jobs'
